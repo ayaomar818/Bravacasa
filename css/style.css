@@ -1753,6 +1753,15 @@ img.hover-shadow {
     padding: 5px 20px;
     top: -46px;
 }
+@media screen and (max-width:768px) {
+    .text-block {
+        padding: 5px;
+        top: -38px;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+}
 /* The Close Button */
 .close {
     position: absolute;
