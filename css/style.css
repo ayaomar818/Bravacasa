@@ -310,7 +310,7 @@ body {
     letter-spacing: 10px;
     text-transform: uppercase;
     font-weight: lighter;
-    margin: 50px auto;
+    margin: 50px auto 20px;
 }
 
 @media screen and (max-width:992px) {
