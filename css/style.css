@@ -792,6 +792,17 @@ body {
     color: #ffa627;
     letter-spacing: 3px;
 }
+@media screen and (max-width:992px) {
+    .Join h2 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:576px) {
+    .Join h2 {
+       font-size: 28px;
+       letter-spacing: 2px;
+    }
+}
 .Join .content {
     margin: 50px 20px 50px;
     background-color: rgba(58, 56, 56, 0.45);
