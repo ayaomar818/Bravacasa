@@ -763,6 +763,7 @@ body {
 .Join{
 	padding: 40px 0px;
 	position: relative;
+        overflow-x: hidden;
 }
 .bg-img{
     background-image: url('../images/bg2.jpg');
