@@ -800,7 +800,7 @@ body {
 }
 @media screen and (max-width:576px) {
     .Join h2 {
-       font-size: 28px;
+       font-size: 24px;
        letter-spacing: 2px;
     }
 }
