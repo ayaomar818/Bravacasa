@@ -790,8 +790,7 @@ body {
 	background-attachment: fixed;
 }
 .Join .overlay {
-    background-color: #6c757d;
-    opacity: 0.8;
+    background: rgb(8 8 8 / 44%);
     height: 100%;
     width: 100%;
     position: absolute;
