@@ -18,13 +18,13 @@ if(isset($_POST['Send'])){
     $from = $_POST['Email']; // this is the sender's Email address
     $name = $_POST['Name'];
     $subject = "Form submission";
-    $message = $Name . " " . " wrote the following:" . "\n\n" . $_POST['Message'];
+    $message = $name . " " . " wrote the following:" . "\n\n" . $_POST['Message'];
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $Name . ", we will contact you shortly.";
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     // You cannot use header and echo together. It's one or the other.
     }
