@@ -790,7 +790,9 @@ body {
 	background-attachment: fixed;
 }
 .Join .overlay {
+    /* background-color: #6c757d; */
     background: rgb(8 8 8 / 44%);
+    /* opacity: 0.8; */
     height: 100%;
     width: 100%;
     position: absolute;
@@ -823,7 +825,8 @@ body {
 
 .Join .content {
     margin: 50px 20px 60px;
-     background: rgb(8 8 8 / 40%);
+    background: rgb(8 8 8 / 36%);
+    /* background-color: rgba(58, 56, 56, 0.45); */
     padding: 60px 50px;
     backdrop-filter: blur(5px);
     box-shadow: 5px 3px 6px 3px rgb(0 0 0 / 20%);
@@ -877,6 +880,33 @@ input[type=number] {
     border-color: #000;
     outline: 0;
     box-shadow: inset 0 0 0 0.2rem rgb(0 0 0 / 45%);
+}
+#status {
+    padding: 10px;
+    color: #fff;
+}
+#sattus.success {
+    animation: status 4s ease forwards;
+    -webkit-animation: status 4s ease forwards;
+}
+#status.error {
+    color: red;
+    animation: status 4s ease forwards;
+    -webkit-animation: status 4s ease forwards;
+}
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 /* Contact */
 .contact {
@@ -1275,21 +1305,6 @@ input[type=number] {
     padding: 8px;
 } 
 
-.myImg {
-/* border-radius: 5px; */
-    cursor: pointer;
-    transition: 0.3s;
-}
-  
-/* .myImg:hover {opacity: 0.7;} */
-img.hover-shadow {
-    transition: 0.3s;
-}
-  
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 @media screen and (max-width:1200px){
     .project1 img {
         width: 95%;
@@ -1612,8 +1627,7 @@ img.hover-shadow {
 .project5 h2 {
     font-family:  Arial, Helvetica, sans-serif;
     color: #302f2f;
-    font-size: 20px;
-    letter-spacing: 3px;
+    font-size: 18px;
     font-weight: lighter;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -1701,7 +1715,18 @@ img.hover-shadow {
     width: 540px;
     height: 320px;
 }
-
+.myImg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* Start Modal */  
 /* The Modal (background) */
 .modal {
@@ -1752,18 +1777,6 @@ img.hover-shadow {
     top: -34px;
     right: 0;
 }
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-/* #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-} */
   
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
@@ -1783,7 +1796,7 @@ img.hover-shadow {
     background-color: #3a3838;
     color: white;
     padding: 5px 20px;
-    top: -46px;
+    top: -47px;
 }
 @media screen and (max-width:768px) {
     .text-block {
