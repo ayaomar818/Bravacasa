@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST['Send'])){
 $name= $_POST ['Name'];
 $email = $_POST['Email'];
 $address = $_POST['Address'];
@@ -19,4 +20,5 @@ mail($to,$email_subject,$email_body,$headers);
 echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
 // header ("Location: index.html");
 // $success = '<div class="alert alert-success">Send Successfuly</div>'
+}
 ?>
