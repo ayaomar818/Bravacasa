@@ -212,7 +212,10 @@
 		<div class="container">
       <h2>Join Our Team</h2>
       <div class="content">
-        <form action="join_handler.php" method="POST"  id="form" >
+        <form action="join_handler.php" method="POST" enctype="multipart/form-data" id="form" >
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New CV">
+          <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
           <div class="form-row">
             <div class="form-group col-sm-6">
               <div class="col-md-10">
@@ -244,14 +247,12 @@
           <div class="form-group mt-3">
             <div class="col-md-10">
               <label class="mr-4">Upload your CV:</label>
-              <input type="file" name="CV" required>
+              <input type="file" name="CV" required accept=".pdf, .doc">
             </div>
           </div>
           <div class="col-md-10">
             <button type="submit" name="submit">Submit</button>
           </div>
-          <p class="success"> <?php echo $success;  ?></p>
-         <p class="failed"> <?php echo $failed;  ?></p>
         </form>
       </div>
 		</div>
